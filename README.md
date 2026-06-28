@@ -28,3 +28,22 @@
 Агент 3: Visualizer — открывает браузер на
 <a href="http://localhost:8050">http://localhost:8050</a>
 Агент 4: News Analyzer — анализ новостей
+
+ri-cluster-analyzer/
+├── reader.py                 # Агент 1: сбор данных из QUIK
+├── analyzer.py               # Агент 2: анализ и генерация сигналов
+├── visualizer.py             # Агент 3: веб-панель Plotly Dash
+├── news_analyzer.py          # Агент 4: новостной анализ через LLM
+├── config.yaml               # Главный конфиг
+├── requirements.txt          # Python-зависимости
+├── .env.example              # Шаблон файла с ключами API
+├── common/                   # Общие модули
+│   ├── config_loader.py      # Загрузка конфига
+│   ├── jsonl_utils.py        # Работа с JSONL
+│   ├── time_utils.py         # Утилиты по времени (МСК, торговые часы)
+│   ├── llm_providers.py      # Клиент YandexGPT
+│   ├── news_keywords.py      # Словари релевантных слов
+│   └── news_sources.py       # Парсеры RSS и Telegram
+├── data/                     # Выходные данные (не коммитятся)
+├── logs/                     # Логи работы (не коммитятся)
+└── docs/                     # Документация
