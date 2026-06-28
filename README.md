@@ -20,3 +20,11 @@
 | News Analyzer | `news_analyzer.py` 	| Парсинг новостей RSS+Telegram, LLM-анализ через YandexGPT |
 
 Подробное описание архитектуры — в [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+Запуск
+
+Агент 1: Reader — сбор данных из QUIK
+Агент 2: Analyzer — генерация сигналов
+Агент 3: Visualizer — открывает браузер на
+<a href="http://localhost:8050">http://localhost:8050</a>
+Агент 4: News Analyzer — анализ новостей
